@@ -12,7 +12,7 @@ export function TotalPointsChart({ participations }) {
         datasets: [
             {
                 barThickness: maxItems > 50 ? 8 : 10,
-                backgroundColor: '#ff56a9',
+                backgroundColor: '#A072D5',
                 datalabels: {
                     display: false,
                 },
@@ -32,14 +32,14 @@ export function TotalPointsChart({ participations }) {
                         display: false,
                     },
                     ticks: {
-                        fontFamily: 'Nunito',
+                        fontFamily: 'Dita',
                     },
                 },
             ],
             yAxes: [
                 {
                     ticks: {
-                        fontFamily: 'Nunito',
+                        fontFamily: 'Dita',
                         suggestedMin: 100,
                         stepSize: 50,
                     },
@@ -75,7 +75,7 @@ export function AveragePointsChart({ participations }) {
         datasets: [
             {
                 barThickness: maxItems > 50 ? 8 : 10,
-                backgroundColor: '#ff56a9',
+                backgroundColor: '#A072D5',
                 datalabels: {
                     display: false,
                 },
@@ -95,14 +95,14 @@ export function AveragePointsChart({ participations }) {
                         display: false,
                     },
                     ticks: {
-                        fontFamily: 'Nunito',
+                        fontFamily: 'Dita',
                     },
                 },
             ],
             yAxes: [
                 {
                     ticks: {
-                        fontFamily: 'Nunito',
+                        fontFamily: 'Dita',
                         max: 15,
                         stepSize: 5,
                     },

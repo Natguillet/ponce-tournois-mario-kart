@@ -33,7 +33,7 @@ function ParticipantsChart({ tournaments }) {
         datasets: [
             {
                 barThickness: maxItems > 50 ? 8 : 10,
-                backgroundColor: '#ff56a9',
+                backgroundColor: '#A072D5',
                 datalabels: {
                     display: false,
                 },
@@ -53,7 +53,7 @@ function ParticipantsChart({ tournaments }) {
                         display: false,
                     },
                     ticks: {
-                        fontFamily: 'Nunito',
+                        fontFamily: 'Dita',
                     },
                 },
             ],
@@ -62,7 +62,7 @@ function ParticipantsChart({ tournaments }) {
                     ticks: {
                         suggestedMin: 0,
                         stepSize: 500,
-                        fontFamily: 'Nunito',
+                        fontFamily: 'Dita',
                     },
                 },
             ],
@@ -80,7 +80,7 @@ function ParticipantsChart({ tournaments }) {
     return (
         <>
             <h1 className="statistics__title title--noMarginTop">
-                Évolution du nombre de fleurs
+                Évolution du nombre de mimis
             </h1>
             <Bar data={data} options={options} />
         </>

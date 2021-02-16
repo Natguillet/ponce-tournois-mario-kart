@@ -44,7 +44,7 @@ function TournamentForm({
             />
 
             <Input
-                label="Nombre de fleurs"
+                label="Nombre de mimis"
                 name="nbParticipants"
                 type="number"
                 defaultValue={tournament && tournament.nbParticipants}

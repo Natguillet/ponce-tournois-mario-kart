@@ -18,12 +18,12 @@ function ParticipationChart({
             {
                 label: tournamentName,
                 fill: false,
-                borderColor: '#ff56a9',
+                borderColor: '#A072D5',
                 datalabels: {
                     align: 'start',
-                    color: '#ff56a9',
+                    color: '#A072D5',
                     font: {
-                        family: 'Nunito',
+                        family: 'Dita',
                     },
                 },
                 data: races.map(((s) => ({ nbPoints }) => (s += nbPoints))(0)),
@@ -34,7 +34,7 @@ function ParticipationChart({
     const options = {
         legend: {
             labels: {
-                fontfamily: 'Nunito',
+                fontfamily: 'Dita',
             },
         },
         scales: {
@@ -44,7 +44,7 @@ function ParticipationChart({
                         display: false,
                     },
                     ticks: {
-                        fontFamily: 'Nunito',
+                        fontFamily: 'Dita',
                         padding: 20,
                     },
                 },
@@ -86,7 +86,7 @@ function ParticipationChart({
                 align: 'end',
                 color: '#424242',
                 font: {
-                    family: 'Nunito',
+                    family: 'Dita',
                 },
             },
             data: record.Races.map(
@@ -104,7 +104,7 @@ function ParticipationChart({
                 align: 'right',
                 color: '#ea4335',
                 font: {
-                    family: 'Nunito',
+                    family: 'Dita',
                 },
                 formatter: (value, ctx) => {
                     return ctx.dataIndex === ctx.dataset.data.length - 1
@@ -127,7 +127,7 @@ function ParticipationChart({
                 align: 'right',
                 color: '#c0c0c0',
                 font: {
-                    family: 'Nunito',
+                    family: 'Dita',
                 },
                 formatter: (value, ctx) => {
                     return ctx.dataIndex === ctx.dataset.data.length - 1

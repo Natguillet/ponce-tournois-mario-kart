@@ -47,7 +47,7 @@ function TournamentInfos({ defaultTournament }) {
 
                             <Col xs={12} sm={6} md={4}>
                                 <div className="tournament__info">
-                                    <label>Nombre de fleurs</label>
+                                    <label>Nombre de mimis</label>
                                     <h4>{tournament.nbParticipants || '-'}</h4>
                                 </div>
                             </Col>

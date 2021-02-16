@@ -13,7 +13,7 @@ const AdminRoute = ({ component: Component, ...rest }) => {
                 user && user.isAdmin ? (
                     <Component {...props} />
                 ) : (
-                    <Error message="Vous n'êtes pas une fleur assez haut gradée pour accéder à cette page." />
+                    <Error message="Vous n'êtes pas un mimi assez haut gradée pour accéder à cette page." />
                 )
             }
         />

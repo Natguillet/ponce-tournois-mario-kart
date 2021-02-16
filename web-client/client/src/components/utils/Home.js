@@ -64,7 +64,7 @@ function HomeButtons({ showPonce, setShowPonce }) {
                     className={showPonce ? 'btnPrimary' : 'btnSecondary'}
                     onClick={() => setShowPonce(true)}
                 >
-                    Ponce
+                    Natiassa
                 </button>
             </Col>
         </Row>

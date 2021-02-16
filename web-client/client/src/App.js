@@ -102,8 +102,8 @@ function App() {
     ) : (
         <Router history={history}>
             <Helmet
-                titleTemplate="%s - Tournoi des fleurs"
-                defaultTitle="Tournoi des fleurs"
+                titleTemplate="%s - Tournoi des mimis"
+                defaultTitle="Tournoi des mimis"
             />
 
             {showLatestPatchNote && (

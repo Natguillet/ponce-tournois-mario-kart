@@ -7,7 +7,7 @@ import {
     faTimes,
     faUserCircle,
 } from '@fortawesome/free-solid-svg-icons';
-import ponceFleur from '../../assets/images/poncefleur.png';
+import natiLogo from '../../assets/images/natiLogo.svg';
 import { useDispatch, useSelector } from 'react-redux';
 import { signout } from '../../redux/actions/auth';
 
@@ -51,7 +51,7 @@ function DesktopHeader() {
         <>
             <div className="header__nav">
                 <Link to="/" className="header__logo">
-                    <img src={ponceFleur} alt="Ponce fleur" />
+                    <img src={natiLogo} alt="Nati mimi" />
                 </Link>
 
                 <ul className="header__navList">
@@ -144,7 +144,7 @@ function MobileHeader() {
     return (
         <>
             <Link to="/" className="header__logo" onClick={close}>
-                <img src={ponceFleur} alt="Ponce fleur" />
+                <img src={natiLogo} alt="Nati mimi" />
             </Link>
 
             <FontAwesomeIcon

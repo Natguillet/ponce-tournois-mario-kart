@@ -4,7 +4,7 @@ export const getSelectStyle = (theme) => {
         borderRadius: 6,
         colors: {
             ...theme.colors,
-            primary: '#ff56a9',
+            primary: '#A072D5',
             primary25: '#f3f3f4',
         },
     };
