@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Container, useScreenClass } from 'react-grid-system';
 import { Link } from 'react-router-dom';
-import ponceFleur from '../../assets/images/poncefleur.png';
+import logoNati from '../../assets/images/natiLogo.svg';
 
 function ExternalLink({ href, children }) {
     return (
@@ -36,15 +36,23 @@ function Footer() {
                         >
                             Ceezik
                         </ExternalLink>
+                        Modifié par{' '}
+                        <ExternalLink
+                            href="https://twitter.com/Natiassa"
+                            external
+                        >
+                            Natiassa & DamienG002
+                        </ExternalLink>
                     </Col>
 
                     <Col xs={12} lg={2}>
                         <Link to="/">
                             <img
                                 className="footer__logo"
-                                src={ponceFleur}
-                                alt="Ponce fleur"
+                                src={logoNati}
+                                alt="Nati logo"
                                 style={isSmall ? { margin: '1em 0' } : {}}
+                                style={{ width: '20px' }}
                             />
                         </Link>
                     </Col>
