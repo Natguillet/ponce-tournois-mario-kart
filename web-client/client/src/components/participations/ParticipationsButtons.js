@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Select from 'react-select';
 import { Row, Col, Hidden, useScreenClass } from 'react-grid-system';
 import { useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,7 +7,7 @@ import {
     faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 import _ from 'lodash';
-import { getSelectStyle } from '../../utils/style';
+import Select from '../form/Select';
 
 function ParticipationsButtons({ participations, setParticipation }) {
     const screenClass = useScreenClass();
@@ -21,7 +20,7 @@ function ParticipationsButtons({ participations, setParticipation }) {
         else {
             const newIndex = _.findIndex(
                 tournaments,
-                (t) => t.id === tournament.id
+                (t) => t.id === tournament?.id
             );
             if (newIndex !== -1) {
                 setIndex(newIndex);
@@ -55,7 +54,7 @@ function ParticipationsButtons({ participations, setParticipation }) {
                     <button
                         className="btnPrimary"
                         onClick={() => setIndex(index - 1)}
-                        style={{ visibility: index > 0 ? 'visible' : 'hidden' }}
+                        disabled={index <= 0}
                     >
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
@@ -74,7 +73,6 @@ function ParticipationsButtons({ participations, setParticipation }) {
                         label: tournament.name,
                     }))}
                     isSearchable={false}
-                    theme={getSelectStyle}
                 />
             </Col>
 
@@ -83,12 +81,7 @@ function ParticipationsButtons({ participations, setParticipation }) {
                     <button
                         className="btnPrimary"
                         onClick={() => setIndex(index + 1)}
-                        style={{
-                            visibility:
-                                index < tournaments.length - 1
-                                    ? 'visible'
-                                    : 'hidden',
-                        }}
+                        disabled={index >= tournaments.length - 1}
                     >
                         <FontAwesomeIcon icon={faChevronRight} />
                     </button>

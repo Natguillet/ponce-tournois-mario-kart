@@ -2,6 +2,8 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import 'chartjs-plugin-datalabels';
 import _ from 'lodash';
+import { useSelector } from 'react-redux';
+import { CSSTheme } from '../../utils/style';
 
 function ParticipationChart({
     record,
@@ -12,16 +14,18 @@ function ParticipationChart({
     tournamentName,
     nbMaxRaces,
 }) {
+    const { theme } = useSelector((state) => state.settings);
+
     const data = {
         labels: Array.from(Array(nbMaxRaces), (_, i) => i + 1),
         datasets: [
             {
                 label: tournamentName,
                 fill: false,
-                borderColor: '#A072D5',
+                borderColor: CSSTheme[theme].mainColor,
                 datalabels: {
                     align: 'start',
-                    color: '#A072D5',
+                    color: CSSTheme[theme].mainColor,
                     font: {
                         family: 'Dita',
                     },
@@ -81,10 +85,10 @@ function ParticipationChart({
         data.datasets.push({
             label: 'Record',
             fill: false,
-            borderColor: '#424242',
+            borderColor: CSSTheme[theme].mainTextColor,
             datalabels: {
                 align: 'end',
-                color: '#424242',
+                color: CSSTheme[theme].mainTextColor,
                 font: {
                     family: 'Dita',
                 },
@@ -122,10 +126,10 @@ function ParticipationChart({
         data.datasets.push({
             label: 'Moyenne',
             fill: false,
-            borderColor: '#c0c0c0',
+            borderColor: CSSTheme[theme].tertiaryTextColor,
             datalabels: {
                 align: 'right',
-                color: '#c0c0c0',
+                color: CSSTheme[theme].tertiaryTextColor,
                 font: {
                     family: 'Dita',
                 },

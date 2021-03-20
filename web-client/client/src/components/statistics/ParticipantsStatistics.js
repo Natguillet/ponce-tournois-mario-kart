@@ -6,6 +6,7 @@ import 'chartjs-plugin-datalabels';
 import _ from 'lodash';
 import ChartSkeleton from './ChartSkeleton';
 import { getReversedTournaments } from '../../redux/selectors/tournaments';
+import { CSSTheme } from '../../utils/style';
 
 function ParticipantsStatistics() {
     const tournaments = useSelector(getReversedTournaments);
@@ -27,13 +28,18 @@ function ParticipantsStatistics() {
 
 function ParticipantsChart({ tournaments }) {
     const { maxItems } = useSelector((state) => state.statistics);
+    const { theme } = useSelector((state) => state.settings);
 
     const data = {
         labels: tournaments.map((t) => t.name),
         datasets: [
             {
                 barThickness: maxItems > 50 ? 8 : 10,
+<<<<<<< HEAD
                 backgroundColor: '#A072D5',
+=======
+                backgroundColor: CSSTheme[theme].mainColor,
+>>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                 datalabels: {
                     display: false,
                 },
@@ -52,9 +58,12 @@ function ParticipantsChart({ tournaments }) {
                     gridLines: {
                         display: false,
                     },
+<<<<<<< HEAD
                     ticks: {
                         fontFamily: 'Dita',
                     },
+=======
+>>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                 },
             ],
             yAxes: [
@@ -62,7 +71,10 @@ function ParticipantsChart({ tournaments }) {
                     ticks: {
                         suggestedMin: 0,
                         stepSize: 500,
+<<<<<<< HEAD
                         fontFamily: 'Dita',
+=======
+>>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                     },
                 },
             ],
