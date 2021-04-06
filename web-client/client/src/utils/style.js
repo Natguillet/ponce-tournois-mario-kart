@@ -11,8 +11,8 @@ export const CSSTheme = {
         borderColor: '#e6e6e6',
     },
     dark: {
-        mainColor: '#ff56a9',
-        mainColorLight: '#fda3cf',
+        mainColor: '#A072D5',
+        mainColorLight: '#cfa6ff',
         mainBackgroundColor: '#36393f',
         secondaryBackgroundColor: '#2f3136',
         mainTextColor: 'white',
