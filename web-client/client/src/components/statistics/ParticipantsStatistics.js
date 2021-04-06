@@ -35,11 +35,7 @@ function ParticipantsChart({ tournaments }) {
         datasets: [
             {
                 barThickness: maxItems > 50 ? 8 : 10,
-<<<<<<< HEAD
-                backgroundColor: '#A072D5',
-=======
                 backgroundColor: CSSTheme[theme].mainColor,
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                 datalabels: {
                     display: false,
                 },
@@ -58,12 +54,9 @@ function ParticipantsChart({ tournaments }) {
                     gridLines: {
                         display: false,
                     },
-<<<<<<< HEAD
                     ticks: {
                         fontFamily: 'Dita',
                     },
-=======
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                 },
             ],
             yAxes: [
@@ -71,10 +64,7 @@ function ParticipantsChart({ tournaments }) {
                     ticks: {
                         suggestedMin: 0,
                         stepSize: 500,
-<<<<<<< HEAD
                         fontFamily: 'Dita',
-=======
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                     },
                 },
             ],

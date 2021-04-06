@@ -14,11 +14,7 @@ export function TotalPointsChart({ participations }) {
         datasets: [
             {
                 barThickness: maxItems > 50 ? 8 : 10,
-<<<<<<< HEAD
-                backgroundColor: '#A072D5',
-=======
                 backgroundColor: CSSTheme[theme].mainColor,
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                 datalabels: {
                     display: false,
                 },
@@ -37,21 +33,15 @@ export function TotalPointsChart({ participations }) {
                     gridLines: {
                         display: false,
                     },
-<<<<<<< HEAD
                     ticks: {
                         fontFamily: 'Dita',
                     },
-=======
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                 },
             ],
             yAxes: [
                 {
                     ticks: {
-<<<<<<< HEAD
                         fontFamily: 'Dita',
-=======
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                         suggestedMin: 100,
                         stepSize: 50,
                     },
@@ -88,11 +78,7 @@ export function AveragePointsChart({ participations }) {
         datasets: [
             {
                 barThickness: maxItems > 50 ? 8 : 10,
-<<<<<<< HEAD
-                backgroundColor: '#A072D5',
-=======
                 backgroundColor: CSSTheme[theme].mainColor,
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                 datalabels: {
                     display: false,
                 },
@@ -111,21 +97,15 @@ export function AveragePointsChart({ participations }) {
                     gridLines: {
                         display: false,
                     },
-<<<<<<< HEAD
                     ticks: {
                         fontFamily: 'Dita',
                     },
-=======
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                 },
             ],
             yAxes: [
                 {
                     ticks: {
-<<<<<<< HEAD
                         fontFamily: 'Dita',
-=======
->>>>>>> f8a5a67af995a9406b5c9be3b6746034bb0b9c77
                         max: 15,
                         stepSize: 5,
                     },
