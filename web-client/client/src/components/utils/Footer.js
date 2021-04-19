@@ -1,4 +1,3 @@
-import React from 'react';
 import { Row, Col, Container, useScreenClass } from 'react-grid-system';
 import { Link } from 'react-router-dom';
 import logoNati from '../../assets/images/natiLogo.svg';
